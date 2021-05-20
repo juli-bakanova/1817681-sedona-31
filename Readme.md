@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Juli Bakanova](https://up.htmlacademy.ru/htmlcss/31/user/1817681).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Смирнова] (https://htmlacademy.ru/profile/id232838).
 
 ---
 
