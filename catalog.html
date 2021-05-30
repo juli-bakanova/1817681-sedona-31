@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+
+<body>
     <header>
       <nav>
         <a>
@@ -16,147 +17,174 @@
           <li><a href="blanck.html">Карта штата</a></li>
           <li><a href="catalogue.html">Гостиницы</a></li>
         </ul>
-        <a href="blank.html">Вход</a>
       </nav>
     </header>
-    <main
+
+<main>
     <section>
       <h2>Фильтр выбора жилья</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Инфраструктура:</legend>
-           <label><input type="checkbox" name="infrastructure" checked ></label>
-           <label for="infrastructure">Бассейн</label>
-           <label><input type="checkbox" name="infrastructure"></label>
-           <label for="infrastructure">Парковка</label>
-           <label><input type="checkbox" name="infrastructure"></label>
-           <label for="infrastructure">Wi-Fi</label>
+          <ul>
+            <li>
+              <input type="checkbox" name="infrastructure" checked value="pool" id="filter-pool">
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="infrastructure" value="parking" id="filter-parking">
+              <label for="ifilter-parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="infrastructure" value="internet" id="filter-internet">
+              <label for="filter-internet">Wi-Fi</label>
+            </li>
+          </ul>
         </fieldset>
+
         <fieldset>
           <legend>Тип жилья:</legend>
           <ul>
-          <li>
-            <input type="checkbox" name="type-of-housing" value="hotel" id="filter-hotel">
+           <li>
+            <input type="checkbox" name="type-of-housing" checked value="hotel" id="filter-hotel">
             <label for="filter-hotel">Гостиница</label>
+           </li>
+           <li>
+            <input type="checkbox" name="type-of-housing" checked value="motel" id="filter-motel">
+            <label for="filter-motel">Мотель</label>
+           </li>
+           <li>
+            <input type="checkbox" name="type-of-housing" checked value="apartments" id="filter-apartments">
+            <label for="filter-apartments">Апартаменты</label>
           </li>
-        </ul>
-        <ul>
-        <li>
-          <input type="checkbox" name="type-of-housing" value="motel" id="filter-motel">
-          <label for="filter-motel">Мотель</label>
-        </li>
-      </ul>
-    <ul>
-    <li>
-      <input type="checkbox" name="type-of-housing" value="apartments" id="filter-apartments">
-      <label for="filter-apartments">Апартаменты</label>
-    </li>
-  </ul>
+         </ul>
         </fieldset>
+
         <fieldset>
-    <legend>Стоимость в сутки, <span>₽</span></legend>
-    <label>от<input type="text" value="0"></label>
-    <label>до<input type="text" value="3000"></label>
-  </fieldset>
-        <button type="submit">Показать</button>
+          <legend>Стоимость в сутки, <span>₽</span></legend>
+          <label>от<input type="text" value="0"></label>
+          <label>до<input type="text" value="3000"></label>
+          <button type="submit">Показать</button>
+        </fieldset>
       </form>
-    </section>
-    <section>
-      <h2>Найдено:3</h2>
-      <p>Сортировка</p>
-      <li>
-       <a>По цене</a>
-     </li>
-     <li>
-        <a href="#">По типу</a>
-      </li>
-      <li>
+
+</section>
+
+<section>
+  <span>Найдено:3</span>
+    <p>Сортировка</p>
+
+     <ul>
+        <li>
+         <a>По цене</a>
+        </li>
+        <li>
+         <a href="#">По типу</a>
+        </li>
+        <li>
          <a href="#">По рейтингу</a>
-       </li>
-    </section>
-    <section>
-      <h2>Список жилья</h2>
+        </li>
+    </ul>
+
+    <div>
+      <span>Стрелка1</span>
+      <span>Стрелка2</span>
+    </div>
+</section>
+
+<section>
+    <h2>Список жилья</h2>
       <ul>
         <li>
-          <a href="catalog.html">
+          <div>
+            <img src="https://via.placeholder.com/150x100" alt="Гостиница Amara Resort & Spa">
             <h3>Гостиница Amara Resort & Spa</h3>
-            <p>
-              <img src="https://via.placeholder.com/150x100" alt="Гостиница Amara Resort & Spa">
-            </p>
-            <p>Гостиница</p>
-            <p>от 4000 ₽</p>
-          </a>
-          <p>
+            <p>Гостиница от 4000 ₽</p>
+           <div>
             <button type="button">Подробнее</button>
-          </p>
-          <p>
-            <button type="button">Заюронировать</button>
-          </p>
-          <p>Рейтинг:8,5</p>
+            <button type="button">Забронировать</button>
+           </div>
+          </div>
+          <div>
+            <span>
+              <span>Звёздочка1</span>
+              <span>Звёздочка2</span>
+              <span>Звёздочка3</span>
+              <span>Звёздочка4</span>
+            </span>
+            <p>Рейтинг:8,5</p>
+          </div>
         </li>
-        <ul>
-          <li>
-            <a href="catalog.html">
+        <li>
+          <div>
+              <img src="https://via.placeholder.com/150x100" alt="Мотель Desert Quail Inn">
               <h3>Мотель Desert Quail Inn</h3>
-              <p>
-                <img src="https://via.placeholder.com/150x100" alt="Мотель Desert Quail Inn">
-              </p>
-              <p>Мотель</p>
-              <p>от 3000 ₽</p>
-            </a>
-            <p>
-              <button type="button">Подробнее</button>
-            </p>
-            <p>
-              <button type="button">Забронировать</button>
-            </p>
-            <p>Рейтинг:8,9</p>
-          </li>
+              <p>Мотель от 3000 ₽</p>
+              <div>
+                <button type="button">Подробнее</button>
+                <button type="button">Забронировать</button>
+             </div>
+         </div>
+         <div>
+              <span>
+                <span>Звёздочка1</span>
+                <span>Звёздочка2</span>
+                <span>Звёздочка3</span>
+                <span>Звёздочка4</span>
+              </span>
+              <p>Рейтинг:8,9</p>
+        </div>
+       </li>
+       <li>
+          <div>
+                <img src="https://via.placeholder.com/150x100" alt="Апартаменты Villas at Poco Diablo">
+                <h3>Апартаменты Villas at Poco Diablo</h3>
+                <p>Апартаменты</p>от 2000 ₽</p>
+                <div>
+                  <button type="button">Подробнее</button>
+                  <button type="button">Забронировать</button>
+                </div>
+          </div>
+          <div>
+                <span>
+                  <span>Звёздочка1</span>
+                  <span>Звёздочка2</span>
+                  <span>Звёздочка3</span>
+                  <span>Звёздочка4</span>
+                </span>
+                <p>Рейтинг:9,2</p>
+          </div>
+      </li>
+</section>
+</main>
+
+<footer>
+    <section>
+          <h2>#VISITSEDONA</h2>
+          <p>Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a></p>
+    </section>
+    <section>
+          <h2>Социальные сети</h2>
           <ul>
             <li>
-              <a href="catalog.html">
-                <h3>Апартаменты Villas at Poco Diablo</h3>
-                <p>
-                  <img src="https://via.placeholder.com/150x100" alt="Апартаменты Villas at Poco Diablo">
-                </p>
-                <p>Апартаменты</p>
-                <p>от 2000 ₽</p>
-              </a>
-              <p>
-                <button type="button">Подробнее</button>
-              </p>
-              <p>
-                <button type="button">Забронировать</button>
-              </p>
-              <p>Рейтинг:9,2</p>
+              <a href="#">Твитер</a>
+              <img src="img/studio.jpg" width="50" height="50" alt="Логотип Твитера">
             </li>
-      </section>
-    </main>
-    <footer>
-    <section>
-      <h2>#VISITSEDONA</h2>
-      <p>
-        Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a>
-      </p>
+            <li>
+              <a href="#">Фейсбук</a>
+              <img src="img/studio.jpg" width="50" height="50" alt="Логотип Фейсбука">
+            </li>
+            <li>
+              <a href="#">Инстаграм</a>
+              <img src="img/studio.jpg" width="50" height="50" alt="Логотип Инстаграма">
+            </li>
+          </ul>
     </section>
     <section>
-      <h2>Социальные сети</h2>
-      <ul>
-        <li>
-          <a href="#">Твитер</a>
-        </li>
-        <li>
-          <a href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a href="#">Инстаграм</a>
-        </li>
-      </ul>
-    </section>
-    <p>
-      Website by
+          <p> Website by
       <a href=href="https://htmlacademy.ru">HTML Academy</a>
             <img src="img/studio.jpg" width="286" height="164" alt="Логотип HTML Academy">
-    </p>
-    </footer>
+          </p>
+    </section>
+</footer>
 </html>
