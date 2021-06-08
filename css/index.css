@@ -213,6 +213,7 @@ img {
 }
 
 .social-button {
+  list-style: none;
   background-color: var(--basic-main-blue);
 }
 
