@@ -1,0 +1,238 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-main-blue: #81B3D2;
+  --basic-dark-grey: #333333;
+  --basic-blue: #23A9E1;
+  --basic-light-blue: 81B3D3;
+  --basic-dark-brown: #491213;
+  --basic-brown: #766357;
+  --basic-light-brown: #766458;
+  --basic-dark-orange: #DC6243;
+  --basic-grey: #EEEEEE;
+  --basic-dark-white: #F2F2F2;
+  --basic-light-orange: #F49774;
+  --basic-ligth-pink: #F4B1A4;
+  --basic-transparent-white: rgba(255, 255, 255, 0.9);
+
+}
+
+/* Big Page */
+
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-dark-white);
+  background-image: url("img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Общая страница */
+
+/*Header*/
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a:not([href]) {
+  background-color: var(--basic-white);
+}
+
+.main-header-logo{
+
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-main-blue);
+}
+/*Main page*/
+
+.index-main{
+
+
+}
+
+/* Reasons */
+
+.top-background-images{
+
+}
+
+.reasons-promo {
+    list-style: none;
+    background: var(--basic-black);
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.reasons-blue {
+   list-style: none;
+   background: var(--basic-black);
+   background-color: var(--basic-main-blue);
+}
+
+.reasons-white {
+   list-style: none;
+   background: var(--basic-black);
+   background-color: var(--basic-white);
+}
+
+.reasons-grey {
+   list-style: none;
+   background: var(--basic-black);
+   background-color: var(--basic-grey);
+}
+
+.reasons-promo h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+}
+
+.reasons-promo p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+}
+.one-third h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+
+}
+
+.one-third span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
+}
+
+.one-third p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
+}
+
+.two-third {
+
+}
+
+.icon-house{
+
+
+}
+
+.icon-food{
+
+
+}
+
+.icon-gift{
+
+
+}
+
+.interested h2{
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.interested p{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.search-button{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: var(--basic-brown);
+
+}
+
+.map {
+
+}
+
+.index-footer {
+ background-color: var(--basic-white)
+
+}
+
+.visitsedona {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.social-button {
+  background-color: var(--basic-main-blue);
+}
+
+.icon-twitter{
+  background-color: var(--basic-white)
+}
+
+.icon-facebook {
+  background-color: var(--basic-white)
+}
+
+.icon-youtube {
+  background-color: var(--basic-white)
+}
+
+.developer p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.developer academy {
+
+}

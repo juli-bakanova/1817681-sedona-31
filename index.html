@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
      <link rel="icon" href="favicon.ico">
+     <link rel="stylesheet" href="css/normalize.css" >
+     <link href="style.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   </head>
 
-<body>
-    <header>
-      <nav>
-        <a>
+<body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
          <img src="img/logo-sedona.png"
               width="138"
               height="70"
               alt="Логотип городка Седона">
-    </a>
-        <ul>
+        </a>
+        <ul class="site-navigation">
           <li><a href="blanck.html">Информация</a></li>
           <li><a href="blanck.html">Фото и видео</a></li>
           <li><a href="blanck.html">Карта штата</a></li>
@@ -24,30 +27,27 @@
       </nav>
     </header>
 
-<main>
- <section>
-    <h1>Welcome to Gorgeus</h1>
-    <div><img src="https://via.placeholder.com/150x100" width="150" height="100"alt="Общий вид каньона в Седоне">
-      <!-- Welcome to Gorgeus, SEDONA и Because the Grand Canyon sucks.
-      Я так поняла, что это фоновые и декоративные картинки.
-      Их пока не нужно подключать -->
+<main class="index-main">
+ <section class="top-background-images">
+    <h1 >Welcome to Gorgeus</h1>
+    <div>
+
     <p> SEDONA </P>
-    <img src="https://via.placeholder.com/150x100" width="150" height="100"alt="Because the Grand</br>Canyon sucks">
     </div>
  </section>
 
- <section>
+ <section class="reasons-promo">
       <h2>Седона — небольшой городок в Аризоне, </br>заслуживающий большего! </h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
  </section>
 
- <section>
-    <div>
+ <section class="reasons-blue">
+    <div class="one-third">
       <h3>Настоящий</br>городок</h3>
       <span>№1</span>
       <p>Седона — не аттракцион для туристов, там</br>течёт своя жизнь</p>
     </div>
-    <div>
+    <div class="two-third">
       <img src="img/town-view.jpg"
            width="800"
            height="256"
@@ -55,45 +55,36 @@
     </div>
  </section>
 
- <section>
+ <section class="reasons-white">
 
     <ul>
-     <li>
-      <img src="https://via.placeholder.com/150x100"
-           width="75"
-           height="72"
-           alt="Иконка домика">
+     <li class="one-third">
+      <div class="icon-house"></div>
       <h3>Жильё</h3>
      <p>Рекомендуем пожить в настоящем</br>мотеле, всё как в кино!</p>
      </li>
 
-     <li>
-      <img src="https://via.placeholder.com/150x100"
-           width="75"
-           height="72"
-           alt="Иконка бургера">
+     <li class="one-third">
+      <div class="icon-food"></div>
       <h3>Еда</h3>
       <p>Всегда заказывайте фирменный бургер,</br>вы не разочаруетесь!</p>
      </li>
 
-     <li>
-        <img src="https://via.placeholder.com/150x100"
-             width="75"
-             height="72"
-             alt="Иконка подарка">
+     <li class="one-third">
+        <div class="icon-gift"></div>
         <h3>Сувениры</h3>
         <p>Не только китайского, но и местного</br>производства</p>
     </li>
     </ul>
  </section>
 
- <section>
-    <div>
+ <section class="reasons-blue">
+    <div class="one-third">
       <h3>Там есть</br>мост дьявола</h3>
       <span>№2</span>
       <p>Да, по нему можно пройти! Если конечно,</br>вы осмелитесь</p>
    </div>
-   <div>
+   <div class="two-third">
      <img src="img/sedona-canyon.jpg"
           width="800"
           height="256"
@@ -101,22 +92,22 @@
    </div>
  </section>
 
- <section>
+ <section class="reasons-grey">
 
     <ul>
-      <li>
+      <li class="one-third">
         <h3>Небольшая</br>площадь</h3>
         <span>№3</span>
         <p>все достопримечательности</br>находятся очень близко</p>
       </li>
 
-      <li>
+      <li class="one-third">
         <h3>Красивая</br>дорога</h3>
         <span>№4</span>
         <p>Ехать в Седону из Лас-Вегаса совсем</br>не скучно!</p>
       </li>
 
-      <li>
+      <li class="one-third">
         <h3>Мало</br>туристов</h3>
         <span>№5</span>
         <p>Большинство едет в Гранд Каньон</br>и толпится там</p>
@@ -124,10 +115,10 @@
     </ul>
  </section>
 
- <section>
+ <section class="interested">
     <h2>Заинтересовались?</h2>
     <p>  Укажите предполагаемые даты поездки,</br> и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-    <button type="submit">Поиск гостиницы в Седоне</button>
+    <button class="search-button" type="submit">Поиск гостиницы в Седоне</button>
  </section>
 
  <section class="map" id= "map">
@@ -139,40 +130,29 @@
 
 </main>
 
-<footer>
-  <section>
-      <h2>#VISITSEDONA</h2>
+<footer class="index-footer">
+  <section class="visitsedona">
+      <h2 class="visitsedona-link" >#VISITSEDONA</h2>
       <p>Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a></p>
   </section>
-  <section>
+  <section class="footer-social">
       <h2>Социальные сети</h2>
       <ul>
         <li>
-          <img src="https://via.placeholder.com/150x100"
-              width="17"
-              height="17"
-              alt="Логотип Твитера">
-          <a href="#">Твитер</a>
+          <li>
+          <a class="social-button" class="icon-twitter" href="#">Твитер</a>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100"
-               width="12"
-               height="22"
-               alt="Логотип Фейсбука">
-          <a href="#">Фейсбук</a>
+          <a class="social-button" class="icon-facebook" href="#">Фейсбук</a>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100"
-               width="20"
-               height="16"
-               alt="Логотип Инстаграма">
-          <a href="#">Инстаграм</a>
+          <a class="social-button" class="icon-youtube" href="#">Инстаграм</a>
         </li>
       </ul>
    </section>
-   <section>
+   <section class="developer">
       <p> Website by
-  <a href=href="https://htmlacademy.ru">HTML Academy</a>
+  <a class="academy" href="https://htmlacademy.ru">HTML Academy</a>
         <img src="img/logo_htmlacademy.svg"
              width="115"
              height="33.03"
