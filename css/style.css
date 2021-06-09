@@ -88,6 +88,10 @@ img {
 
 /* Reasons */
 
+ul {
+list-style: none;
+}
+
 .top-background-images{
 
 }
@@ -234,6 +238,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
   background-color: var(--basic-brown);
 
 }
