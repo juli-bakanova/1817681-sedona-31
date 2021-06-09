@@ -181,6 +181,7 @@ list-style: none;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+  color: var(--basic-white);
 
 }
 
@@ -188,6 +189,7 @@ list-style: none;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  color: var(--basic-white);
 
 }
 
@@ -195,6 +197,7 @@ list-style: none;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  color: var(--basic-white);
 
 }
 
@@ -238,7 +241,7 @@ list-style: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-
+  color: var(--basic-white);
   background-color: var(--basic-brown);
 
 }
