@@ -5,6 +5,7 @@
   --basic-white: #ffffff;
   --basic-main-blue: #81B3D2;
   --basic-dark-grey: #333333;
+  --basic-grey: #666666;
   --basic-blue: #23A9E1;
   --basic-light-blue: 81B3D3;
   --basic-dark-brown: #491213;
@@ -52,6 +53,7 @@ img {
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
+  font-weight: 700;
   color: var(--basic-black);
   background-color: transparent;
 }
@@ -240,8 +242,10 @@ list-style: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-decoration: none;
   color: var(--basic-white);
   background-color: var(--basic-brown);
+  border: none;
 
 }
 
@@ -250,7 +254,7 @@ list-style: none;
 }
 
 .index-footer {
- background-color: var(--basic-white)
+ background-color: var(--basic-white);
 
 }
 
@@ -266,19 +270,21 @@ list-style: none;
 
 .social-button {
   list-style: none;
+  text-decoration: none;
   background-color: var(--basic-main-blue);
+  border: none;
 }
 
 .icon-twitter{
-  background-color: var(--basic-white)
+  background-color: var(--basic-white);
 }
 
 .icon-facebook {
-  background-color: var(--basic-white)
+  background-color: var(--basic-white);
 }
 
 .icon-youtube {
-  background-color: var(--basic-white)
+  background-color: var(--basic-white);
 }
 
 .developer p {
@@ -288,5 +294,230 @@ list-style: none;
 }
 
 .developer academy {
+
+}
+
+
+/*catalog.html*/
+
+.index-main {
+
+}
+
+
+.filter {
+  background: url("../img/mountains-filter.jpg") no-repeat;
+}
+
+.check{
+
+}
+
+.filter-menu{
+
+}
+
+.infrastructure{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.pool {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.parking {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.internet {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.housing {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.hotel {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.motel {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.apartments {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.price {
+
+}
+
+.price-filter {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.min-price {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.max-price {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.show-button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--basic-white);
+  border: none;
+}
+
+.results {
+ background-color: var(--bacis-white);
+}
+
+.match {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.coast {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-main-blue);
+}
+
+.type {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+  color: transparent 30%;
+}
+
+.rait {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+  color: transparent 30%;
+}
+
+.sorting-buttons {
+  text-decoration: none;
+  border: none;
+}
+
+.view-result {
+
+}
+
+.hotel-container {
+
+}
+
+.hotel-container h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.hotel-container p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.hotel-container .more-btn {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--basic-white);
+    background-color: var(--basic-main-blue);
+    border: none;
+  }
+
+.hotel-container .reserve-btn {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--basic-white);
+    background-color: var(--basic-brown);
+    border: none;
+  }
+
+.hotel-title{
+
+}
+
+.hotel-type {
+
+}
+
+.raiting{
+
+}
+
+.raiting-text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-grey);
+}
+
+.stars {
+
+}
+
+.icon-stars {
 
 }
