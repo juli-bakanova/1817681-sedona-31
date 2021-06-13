@@ -317,71 +317,31 @@ list-style: none;
 
 }
 
-.infrastructure{
+.filter-menu ul {
+
+}
+
+.form-legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
   color: var(--basic-white);
 }
 
-.pool {
+.form-label {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: var(--basic-white);
 }
 
-.parking {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--basic-white);
-}
 
-.internet {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--basic-white);
-}
+.form-input {
 
-.housing {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 700;
-  color: var(--basic-white);
-}
-
-.hotel {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--basic-white);
-}
-
-.motel {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--basic-white);
-}
-
-.apartments {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--basic-white);
 }
 
 .price {
 
-}
-
-.price-filter {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 700;
-  color: var(--basic-white);
 }
 
 .min-price {
@@ -425,27 +385,18 @@ list-style: none;
   color: var(--basic-black);
 }
 
-.coast {
+.sort-link {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  color: var(--basic-black);
+}
+.sort-link .current {
   color: var(--basic-main-blue);
 }
 
-.type {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-  color: var(--basic-black);
-  color: transparent 30%;
-}
+.buttons-wrapper {
 
-.rait {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-  color: var(--basic-black);
-  color: transparent 30%;
 }
 
 .sorting-buttons {
@@ -454,6 +405,14 @@ list-style: none;
 }
 
 .view-result {
+
+}
+
+.housing-list{
+
+}
+
+.housing-item {
 
 }
 
@@ -503,11 +462,11 @@ list-style: none;
 
 }
 
-.raiting{
+.rating{
 
 }
 
-.raiting-text {
+.rating-text {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
