@@ -32,46 +32,46 @@
       <h2>Фильтр выбора жилья</h2>
       <form class="filter-menu" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend class="form-legend">Инфраструктура:</legend>
-          <ul>
+          <legend class="infrastructure">Инфраструктура:</legend>
+          <ul class="filter-list">
             <li class="check">
-              <input class ="form-input" type="checkbox" name="infrastructure" checked value="pool" id="filter-pool">
-              <label class="form-label" for="pool">Бассейн</label>
+              <input type="checkbox" name="infrastructure" checked value="pool" id="filter-pool">
+              <label for="filter-pool">Бассейн</label>
             </li>
             <li class="check">
-              <input class ="form-input" type="checkbox" name="infrastructure" value="parking" id="filter-parking">
-              <label class="form-label" for="parking">Парковка</label>
+              <input type="checkbox" name="infrastructure" value="parking" id="filter-parking">
+              <label for="ifilter-parking">Парковка</label>
             </li>
             <li class="check">
-              <input class ="form-input" type="checkbox" name="infrastructure" value="internet" id="filter-internet">
-              <label class="form-label" for="internet">Wi-Fi</label>
+              <input type="checkbox" name="infrastructure" value="internet" id="filter-internet">
+              <label for="filter-internet">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset>
-          <legend class="form-legend">Тип жилья:</legend>
+          <legend class="housing">Тип жилья:</legend>
           <ul>
            <li class="check">
-            <input class ="form-input" type="checkbox" name="type-of-housing" checked value="hotel" id="filter-hotel">
-            <label class="form-label" for="hotel">Гостиница</label>
+            <input type="checkbox" name="type-of-housing" checked value="hotel" id="filter-hotel">
+            <label for="filter-hotel">Гостиница</label>
            </li>
            <li class="check">
-            <input class ="form-input" type="checkbox" name="type-of-housing" checked value="motel" id="filter-motel">
-            <label class="form-label" for="motel">Мотель</label>
+            <input type="checkbox" name="type-of-housing" checked value="motel" id="filter-motel">
+            <label for="filter-motel">Мотель</label>
            </li>
            <li class="check">
-            <input class ="form-input" type="checkbox" name="type-of-housing" checked value="apartments" id="filter-apartments">
-            <label class="form-label" for="apartments">Апартаменты</label>
+            <input type="checkbox" name="type-of-housing" checked value="apartments" id="filter-apartments">
+            <label for="filter-apartments">Апартаменты</label>
           </li>
          </ul>
         </fieldset>
 
         <fieldset class="price">
-          <legend class="form-legend">Стоимость в сутки, <span>₽</span></legend>
+          <legend class="price-filter">Стоимость в сутки, <span>₽</span></legend>
           <label class="min-price">от<input type="text" name="min-price" value="0"></label>
           <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
-          <button class="show-button" type="submit">Показать</button>
+          <button type="submit">Показать</button>
         </fieldset>
       </form>
 
@@ -81,15 +81,15 @@
   <span class="match">Найдено:3</span>
     <span class="sorting">Сортировка</span>
 
-     <ul class="sort-list">
+     <ul>
         <li>
-         <a class="current sort-link">По цене</a>
+         <a class="current">По цене</a>
         </li>
         <li>
-         <a class="sort-link" href="#">По типу</a>
+         <a href="#">По типу</a>
         </li>
         <li>
-         <a class="sort-link" href="#">По рейтингу</a>
+         <a href="#">По рейтингу</a>
         </li>
     </ul>
 
@@ -101,8 +101,8 @@
 
 <section>
     <h2 class="view-result"> Список жилья</h2>
-      <ul class="housing-list">
-        <li class="housing-item">
+      <ul>
+        <li>
           <div class="hotel-container">
             <img src="img/photo-amara-resort.jpg"
                  width="135"
@@ -110,9 +110,9 @@
                  alt="Главное фото гостиница Amara Resort & Spa">
             <h3 class="hotel-title">Amara Resort & Spa</h3>
             <p class="hotel-type">Гостиница от 4000 ₽</p>
-           <div class="buttons-wrapper">
-            <button class="more-btn" type="button">Подробнее</button>
-            <button class="reserve-btn" type="button">Забронировать</button>
+           <div>
+            <button class="more" type="button">Подробнее</button>
+            <button class="reserve" type="button">Забронировать</button>
            </div>
           </div>
           <div class="rating">
@@ -122,10 +122,10 @@
               <span class="icon-star">Звёздочка3</span>
               <span class="icon-star">Звёздочка4</span>
             </span>
-            <p class="rating-text">Рейтинг:8,5</p>
+            <p class="raiting-text">Рейтинг:8,5</p>
           </div>
         </li>
-        <li class="housing-item">
+        <li>
           <div class="hotel-container">
               <img src="img/photo-desert-quail.jpg"
                    width="135"
@@ -133,9 +133,9 @@
                    alt="Главное фото Мотеля Desert Quail Inn">
               <h3 class="hotel-title">Desert Quail Inn</h3>
               <p class="hotel-type">Мотель от 3000 ₽</p>
-              <div class="buttons-wrapper">
-                <button class="more-btn" type="button">Подробнее</button>
-                <button class="reserve-btn" type="button">Забронировать</button>
+              <div>
+                <button class="more" type="button">Подробнее</button>
+                <button class="reserve" type="button">Забронировать</button>
              </div>
          </div>
          <div class="rating">
@@ -143,11 +143,12 @@
               <span class="icon-star">Звёздочка1</span>
               <span class="icon-star">Звёздочка2</span>
               <span class="icon-star">Звёздочка3</span>
+              <span class="icon-star">Звёздочка4</span>
             </span>
-              <p class="rating-text">Рейтинг:8,9</p>
+              <p class="raiting-text">Рейтинг:8,9</p>
         </div>
        </li>
-       <li class="housing-item">
+       <li>
           <div class="hotel-container">
                 <img src="img/photo-villas-diablo.jpg"
                      width="135"
@@ -155,17 +156,19 @@
                      alt="Апартаменты Villas at Poco Diablo">
                 <h3 class="hotel-title">Villas at Poco Diablo</h3>
                 <p class="hotel-type">Апартаменты</p>от 2000 ₽</p>
-                <div class="buttons-wrapper">
-                  <button class="more-btn" type="button">Подробнее</button>
-                  <button class="reserve-btn" type="button">Забронировать</button>
+                <div>
+                  <button class="more" type="button">Подробнее</button>
+                  <button class="reserve" type="button">Забронировать</button>
                 </div>
           </div>
           <div class="rating">
              <span class="stars">
                 <span class="icon-star">Звёздочка1</span>
                 <span class="icon-star">Звёздочка2</span>
+                <span class="icon-star">Звёздочка3</span>
+                <span class="icon-star">Звёздочка4</span>
              </span>
-                <p class="rating-text">Рейтинг:9,2</p>
+                <p class="raiting-text">Рейтинг:9,2</p>
           </div>
       </li>
 </section>
