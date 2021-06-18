@@ -138,15 +138,6 @@ list-style: none;
   margin-bottom: 81px;
 }
 
-.reasons-promo {
-    justify-self: center;
-    list-style: none;
-    background: var(--basic-white);
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-}
-
 
 .benefit {
    display: grid;
@@ -276,17 +267,21 @@ list-style: none;
   text-align: center;
 
 }
+.reasons-promo {
+    justify-self: center;
+    list-style: none;
+    background: var(--basic-white);
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
 
 .reasons-promo h2 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
 
 }
 
 .reasons-promo p {
   font-size: 14px;
-  line-height: 26px;
   font-weight: 400;
 }
 
