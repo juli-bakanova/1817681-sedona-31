@@ -69,7 +69,6 @@ img {
 /*Header*/
 
 .main-navigation {
-  display: grid;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -82,21 +81,21 @@ img {
 }
 
 .main-navigation {
-  display: grid;
-  grid-template-columns:  1fr 1fr 2fr 1fr 1fr;
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.main-header-logo{
-  justify-self: center;
-}
-
 .site-navigation {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-header-logo{
+  justify-self: center;
 }
 
 .site-navigation a:not([href]) {
@@ -125,6 +124,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+  text-align: center;
 }
 
 /* Reasons */
@@ -142,7 +142,6 @@ list-style: none;
 .benefit {
    display: grid;
    grid-template-columns:  2fr 4fr;
-   min-width: 1200px;
    list-style: none;
    background-color: var(--basic-main-blue);
 }
@@ -171,7 +170,6 @@ list-style: none;
 
 .benefit-image .benefit--right {
   width: 800px;
-  height: 256px;
   margin: 0;
 
 }
@@ -179,8 +177,7 @@ list-style: none;
 
 .benefit-image {
   width: 800px;
-  height: 256px;
-  margin: 0;
+  margin-bottom: 0;
 
 }
 
@@ -235,8 +232,6 @@ list-style: none;
 }
 
 .favors {
-  min-width: 1200px;
-  height: 256px;
   background-color: var(--basic-grey);
 }
 
@@ -286,7 +281,6 @@ list-style: none;
 }
 
 .interested {
-  min-width: 100%;
   background-color: var(--basic-white);
   text-align: center;
 }
@@ -313,7 +307,6 @@ list-style: none;
 }
 
 .map {
-   height: 593px;
    width: 100%;
 
 }
@@ -331,7 +324,6 @@ list-style: none;
 }
 
 .contacts {
-  margin-left: 200px;
   width: 320px;
   font-size: 21px;
   line-height: 26px;
