@@ -319,8 +319,6 @@ list-style: none;
   padding: 10px 0;
   margin-top: 23px;
   background-color: var(--basic-white)
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-
 }
 
 .contacts {
@@ -368,5 +366,213 @@ list-style: none;
 }
 
 .developer academy {
+
+}
+
+/*catalog.html*/
+
+.index-main {
+
+
+}
+
+
+.filter {
+    width: 100%;
+    color: var(--basic-white);
+
+
+}
+
+.check{
+
+}
+
+.filter-menu {
+  background: url("..img/catalog-background.jpg") no-repeat;
+}
+
+.filter-menu ul {
+
+}
+
+.form-legend {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    padding: 27px 10px 30px;
+    padding-left: 26px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: var(--basic-white);
+}
+
+
+.filter-list {
+}
+
+.housing {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.form-input {
+
+}
+
+.price {
+  display:inline-block;
+  width: 50%;
+  padding-top: 26px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+
+.min-price {
+  list-style: none;
+  color: var(--basic-black);
+}
+
+.max-price {
+  color: var(--basic-white);
+}
+
+.show-button {
+  text-decoration: none;
+  color: var(--basic-white);
+  border: none;
+}
+
+.results {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 2fr;
+ justify-content: center;
+ background-color: var(--bacis-white);
+
+}
+
+
+.match {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 73px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+
+}
+
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.sort-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+}
+
+.sort-link {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.sort-link .current {
+  color: var(--basic-main-blue);
+}
+
+.buttons-wrapper {
+
+}
+
+
+.sorting-buttons {
+  text-decoration: none;
+  border: none;
+}
+
+.view-result {
+
+}
+
+.housing-list{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 73px;
+  padding-right: 73px;
+
+}
+
+.housing-item {
+
+}
+
+.hotel-container {
+
+}
+
+.hotel-container h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.hotel-container p {
+  color: var(--basic-black);
+}
+
+.hotel-container .more-btn {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--basic-white);
+    background-color: var(--basic-main-blue);
+    border: none;
+  }
+
+.hotel-container .reserve-btn {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--basic-white);
+    background-color: var(--basic-brown);
+    border: none;
+  }
+
+.hotel-title{
+
+}
+
+.hotel-type {
+
+}
+
+.rating{
+
+}
+
+.rating-text {
+  color: var(--basic-grey);
+}
+
+.stars {
+
+}
+
+.icon-stars {
 
 }
