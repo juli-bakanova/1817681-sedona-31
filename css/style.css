@@ -492,6 +492,11 @@ list-style: none;
   align-content: center;
 }
 
+.sort-list ul {
+  margin: 0;
+  padding: 0;
+}
+
 .sort-link {
   font-size: 12px;
   line-height: 18px;
@@ -527,6 +532,10 @@ list-style: none;
 
 }
 
+.housing-list ul {
+  margin: 0;
+  padding: 0;
+}
 .housing-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
