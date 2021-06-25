@@ -176,16 +176,11 @@ list-style: none;
 
 }
 
-.benefit .benefit--right {
+.benefit--right {
   flex-direction: row-reverse;
   justify-content: flex-start;
   margin: 0;
 }
-
-.benefit-content .benefit{
-  order: 1;
-}
-
 
 
 .benefit-image {
