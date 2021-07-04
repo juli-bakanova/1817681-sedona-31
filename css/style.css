@@ -44,9 +44,7 @@
   justify-content: space-around;
   align-items: center;
   background-image: url("../img/background-photo.jpg");
-  background-size: 1200px 725px;
-  min-height: 100%;
-  padding: 35px 372px 81px 372px;
+
   box-sizing: border-box;
   padding-top: 77px;
   padding-bottom: 81px;
@@ -59,11 +57,7 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
 
-}
 
 .visually-hidden {
   position: absolute;
@@ -553,14 +547,16 @@ list-style: none;
   color: var(--basic-grey);
 }
 
-.academy-logo path:hover,
-.academy-logo path:focus {
-  fill: var(--basic-main-blue);
+
+svg:hover path {
+   fill: var(--basic-main-blue);
 }
 
-academy-logo path:active {
-  fill: var(--basic-grey);
+svg:active path {
+   fill: #BDBBBC;
 }
+
+
 
 
 /*catalog.html*/
