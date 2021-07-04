@@ -23,7 +23,7 @@
 /* Big Page */
 
 .page-body {
-  min-width: 1200px;
+  min-width: 1240px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -32,19 +32,24 @@
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-image: url("../img/background-photo.jpg");
   background-color: var(--basic-white);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 1200px 725px;
-  background-origin: padding-box;
 
-
-  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
+
+.top-background-images{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("../img/background-photo.jpg");
+  background-size: 1200px 725px;
+  min-height: 100%;
+  padding: 35px 372px 81px 372px;
+}
+
+
 
 a {
   text-decoration: none;
@@ -113,8 +118,10 @@ img {
 
 }
 
-.main-header-logo{
+.main-header-logo li {
   justify-self: center;
+  width: 138px;
+  height: 70px;
 }
 
 .site-navigation a:not([href]) {
@@ -164,7 +171,9 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
+  box-shadow:0 30px 10px #dbdbdb;
+
 }
 
 /* Reasons */
@@ -173,13 +182,7 @@ ul {
 list-style: none;
 }
 
-.top-background-images{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 81px;
-  margin-top: 60px;
-}
+
 
 
 .benefit {
@@ -194,8 +197,7 @@ list-style: none;
 .benefit-content {
   text-align: center;
   width: 400px;
-  margin-top: 47px;
-  margin-bottom: 54px;
+  padding-top: 47px;
 }
 
 .benefit-content h3 {
@@ -203,17 +205,14 @@ list-style: none;
   line-height: 21px;
   font-weight: 700;
   color: var(--basic-white);
-
 }
 
 .benefit-content span {
   color: var(--basic-white);
-
 }
 
 .benefit-content p {
   color: var(--basic-white);
-
 }
 
 .benefit--right {
@@ -226,7 +225,6 @@ list-style: none;
 .benefit-image {
   width: 800px;
   margin-bottom: 0;
-
 }
 
 .advantages {
@@ -302,7 +300,7 @@ list-style: none;
 .favors-list {
    display: grid;
    grid-template-columns:  1fr 1fr 1fr;
-   column-gap: 150px;
+
    margin: 0;
    padding: 0;
    list-style: none;
@@ -312,12 +310,15 @@ list-style: none;
 .favors-item {
   margin-top: 47px;
   margin-bottom: 54px;
-
+  text-align: center;
 
 }
 
+
+
+
 .favors-item h3{
-  text-align: center;
+
   list-style: none;
   font-size: 21px;
   line-height: 21px;
@@ -325,13 +326,19 @@ list-style: none;
 }
 
 .favors-item span{
-  text-align: center;
 
 }
 
 .favors-item p {
-  text-align: center;
 
+
+}
+
+.reasons-promo::before {
+   position: absolute;
+
+   width: 1200px;
+   height: 57px;
 }
 
 .reasons-promo {
@@ -341,10 +348,7 @@ list-style: none;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-
-    padding-top: 60px;
     padding-bottom: 51px;
-    line-height: 26px;
 
 }
 
@@ -419,11 +423,11 @@ list-style: none;
 /*Footer*/
 
 .index-footer {
-  margin: 0 auto;
-  padding: 23px 0 36px;
+  margin-top: -120px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: var(--basic-white)
+  background-color: rgba(255, 255, 255, 0.9);
+
 }
 
 .contacts {
@@ -431,6 +435,7 @@ list-style: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  padding-top: 23px;
   margin-left: 136px;
   margin-bottom: 36px;
   color: var(--basic-black);
@@ -438,10 +443,16 @@ list-style: none;
   cursor: pointer;
 }
 
+.contacts-title {
+
+}
+
 .contacts a {
   color: var(--basic-black);
   padding: 0;
   margin: 0;
+  padding-top: 23px;
+  padding-bottom: 36px;
 }
 
 
@@ -451,6 +462,8 @@ list-style: none;
   justify-self: center;
   list-style: none;
   text-align: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .footer-social ul {
@@ -490,6 +503,7 @@ list-style: none;
   max-width: 205px;
   margin: 0;
   justify-self: center;
+  padding-top: 43px;
 }
 
 .developer p {
