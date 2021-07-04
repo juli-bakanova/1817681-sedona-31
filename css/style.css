@@ -32,7 +32,7 @@
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background-color: #f2f2f2;
 
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -47,6 +47,10 @@
   background-size: 1200px 725px;
   min-height: 100%;
   padding: 35px 372px 81px 372px;
+  box-sizing: border-box;
+  padding-top: 76px;
+  padding-bottom: 81px;
+
 }
 
 
@@ -94,17 +98,15 @@ img {
   line-height: 26px;
   color: var(--basic-black);
   background-color: transparent;
+  width: 1200px;
 
+
+  margin: 0 auto;
+  padding: 0;
 }
 
 .main-header {
   background-color: var(--basic-white);
-}
-
-.main-navigation {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .site-navigation {
@@ -114,18 +116,29 @@ img {
   align-items: center;
   margin: 0;
   padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
   list-style: none;
 
 }
 
-.main-header-logo li {
-  justify-self: center;
-  width: 138px;
-  height: 70px;
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 550px;
 }
 
+.site-navigation li:nth-child(2) {
+  padding-right: 133px;
+}
+
+.site-navigation li:nth-child(3) {
+  padding-left: 147px;
+}
+
+
 .site-navigation a:not([href]) {
-  background-color: var(--basic-white);
+
 }
 
 
@@ -173,6 +186,7 @@ img {
   margin: 0 auto;
   padding: 0;
   box-shadow:0 30px 10px #dbdbdb;
+  background-color: var(--basic-white);
 
 }
 
@@ -225,6 +239,7 @@ list-style: none;
 .benefit-image {
   width: 800px;
   margin-bottom: 0;
+  line-height: 0;
 }
 
 .advantages {
@@ -335,10 +350,14 @@ list-style: none;
 }
 
 .reasons-promo::before {
-   position: absolute;
-
+   content: "";
    width: 1200px;
    height: 57px;
+   background: url(../img/mask-triangles.svg/);
+   position: absolute;
+   top: -57px;
+   left: -269px;
+
 }
 
 .reasons-promo {
@@ -348,7 +367,9 @@ list-style: none;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    padding-top: 56px;
     padding-bottom: 51px;
+    position: relative;
 
 }
 
@@ -423,10 +444,13 @@ list-style: none;
 /*Footer*/
 
 .index-footer {
-  margin-top: -120px;
+  margin-top: -170px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: rgba(255, 255, 255, 0.9);
+  padding-top: 23px;
+  padding-bottom: 36px;
+  align-items: center;
 
 }
 
@@ -435,9 +459,7 @@ list-style: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  padding-top: 23px;
   margin-left: 136px;
-  margin-bottom: 36px;
   color: var(--basic-black);
   text-align: center;
   cursor: pointer;
@@ -451,8 +473,6 @@ list-style: none;
   color: var(--basic-black);
   padding: 0;
   margin: 0;
-  padding-top: 23px;
-  padding-bottom: 36px;
 }
 
 
@@ -462,8 +482,6 @@ list-style: none;
   justify-self: center;
   list-style: none;
   text-align: center;
-  padding-top: 36px;
-  padding-bottom: 36px;
 }
 
 .footer-social ul {
@@ -503,7 +521,6 @@ list-style: none;
   max-width: 205px;
   margin: 0;
   justify-self: center;
-  padding-top: 43px;
 }
 
 .developer p {
@@ -521,7 +538,7 @@ list-style: none;
     background-position: -10px -8px;
 }
 
-.developer img:hover
+.developer img:hover,
 .developer img:focus {
   color: var(--basic-main-blue);
 }
@@ -529,6 +546,16 @@ list-style: none;
 .developer img:active {
   color: var(--basic-grey);
 }
+
+.academy-logo path:hover,
+.academy-logo path:focus {
+  fill: var(--basic-main-blue);
+}
+
+academy-logo path:active {
+  fill: var(--basic-grey);
+}
+
 
 /*catalog.html*/
 
