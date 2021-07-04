@@ -132,11 +132,6 @@ a {
 }
 
 
-.site-navigation a:not([href]) {
-
-}
-
-
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
