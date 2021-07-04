@@ -48,7 +48,7 @@
   min-height: 100%;
   padding: 35px 372px 81px 372px;
   box-sizing: border-box;
-  padding-top: 76px;
+  padding-top: 77px;
   padding-bottom: 81px;
 
 }
@@ -62,6 +62,8 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  padding-top: 62px;
+  padding-bottom: 121px;
 }
 
 .visually-hidden {
@@ -356,7 +358,7 @@ list-style: none;
    background: url(../img/mask-triangles.svg/);
    position: absolute;
    top: -57px;
-   left: -269px;
+   left: -358px;
 
 }
 
@@ -376,6 +378,7 @@ list-style: none;
 .reasons-promo h2 {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 21px;
 
 }
 
@@ -435,6 +438,10 @@ list-style: none;
   color: var(--basic-white);
 }
 
+.search-button span:active {
+  color: var(--basic-white);
+  opacity: 0.3;
+}
 
 .map {
    width: 100%;
