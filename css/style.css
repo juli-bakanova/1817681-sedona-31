@@ -439,7 +439,7 @@ list-style: none;
 /*Footer*/
 
 .index-footer {
-  margin-top: -120px;
+  /*margin-top: -120px;*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: rgba(255, 255, 255, 0.9);
@@ -583,10 +583,24 @@ svg:active path {
 
 .filter-menu ul {
 
+  list-style: none;
 }
 
 
+
+
+.price {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 316px;
+}
+
 .form-legend {
+
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
@@ -594,6 +608,138 @@ svg:active path {
     color: var(--basic-white);
 }
 
+.form-legend label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-label {
+  justify-content: space-between;
+}
+
+.check {
+  cursor: pointer;
+  user-select: none;
+}
+
+.check::before {
+  content: "";
+  position: relative;
+
+  padding: 0 15px 23px 13px;
+
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.check:checked::after {
+  content: "";
+  position: relative;
+
+  padding: 0 15px 23px 13px;
+
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+
+.range-controls {
+  position: relative;
+  height: 20px;
+  margin-bottom: 33px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  border-radius: 5px;
+  width: 316px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+}
+
+.range-controls .toggle-max {
+  left: 233px;
+}
+
+.price-controls input {
+  max-width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+  text-align: center;
+
+  background: none;
+  border: none;
+}
+
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 317px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  text-align: center;
+  color: var(--basic-white);
+  border: 2px solid white;
+}
+
+.show-button {
+  width: 133px;
+  height: 32px;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.show-button:hover,
+.show-button:focus {
+  color: #000000;
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
 
 .filter-list {
   padding-left: 72px;
@@ -608,10 +754,6 @@ svg:active path {
 
 
 
-.form-input {
-
-}
-
 .price {
  width: 317px;
  padding-top: 26px;
@@ -625,10 +767,12 @@ svg:active path {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: var(--basic-black);
+  padding-left: 52px;
+  color: var(--basic-white);
 }
 
 .max-price {
+  padding-right: 36px;
   color: var(--basic-white);
 }
 
@@ -649,6 +793,7 @@ svg:active path {
  padding-left: 73px;
  padding-top: 30px;
  padding-bottom: 30px;
+ padding-right: 73px;
  color: var(--basic-black);
 }
 
@@ -675,16 +820,37 @@ svg:active path {
 }
 
 
-.sort-list ul {
+.sort-link ul {
   margin: 0;
   padding: 0;
 }
+
+.sort-link:hover {
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dashed #81B3D2;
+  }
+
+.sort-link:hover,
+.sort-link:focus {
+    color: #81B3D2;
+    border-bottom: 1px dashed #81B3D2;
+  }
+
+.sort-link:active {
+    color: #000000;
+
+  }
+
+.sort-link:active {
+    color: #81B3D2;
+
+  }
 
 .sort-link {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  color: var(--basic-black);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sort-link .current {
@@ -702,6 +868,26 @@ svg:active path {
   text-align: right;
   vertical-align: top;
 }
+
+.sorting-buttons:hover {
+    fill: #CACACA;
+  }
+
+.sorting-buttons:hover,
+.sorting-buttons:focus {
+    fill: #000000;
+  }
+
+.sorting-buttons:active {
+    fill: #81B3D2;
+
+  }
+
+.sorting-buttons:active {
+      fill: #81B3D2;
+
+    }
+
 
 .view-result {
 
@@ -726,6 +912,7 @@ svg:active path {
   margin: 0;
   padding: 0;
 }
+
 .housing-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -780,14 +967,35 @@ svg:active path {
 
 }
 
-.buttons-wrapper {
-  grid-column-start: 2;
-  grid-column-end: 3;
+.test {
+  display: flex;
+  flex-direction: column;
+}
 
+.hotel-parameter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-type,
+.hotel-price {
+  width: 44%;
+  margin: 0;
+}
+
+
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
 
 }
 
-.hotel-container .more-btn {
+.hotel-container .more-button {
+
+    width: 110px;
+    height: 27px;
+    margin: 0 auto;
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
@@ -795,9 +1003,33 @@ svg:active path {
     color: var(--basic-white);
     background-color: var(--basic-main-blue);
     border: none;
+    cursor: pointer;
   }
 
-.hotel-container .reserve-btn {
+.hotel-container .more-button:hover {
+    background-color: var(--basic-main-blue);
+  }
+
+.hotel-container .more-button:hover,
+.hotel-container .more-button:focus {
+    background-color: #669EC0;
+  }
+
+.hotel-container .more-button:active {
+    background-color: #5496BD;
+
+  }
+
+.hotel-container .more-button:active span {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+.hotel-container .reserve-button {
+
+    width: 142px;
+    height: 27px;
+    margin: 0 auto;
+    margin-left: 6px;
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
@@ -805,7 +1037,29 @@ svg:active path {
     color: var(--basic-white);
     background-color: var(--basic-brown);
     border: none;
+    cursor: pointer;
   }
+
+  .hotel-container .reserve-button:hover {
+      background-color: var(--basic-brown);
+    }
+
+  .hotel-container .reserve-button:hover,
+  .hotel-container .reserve-button:focus {
+      background-color: #604E43;
+    }
+
+  .hotel-container .more-button:active {
+      background-color: 503E33;
+
+    }
+
+  .hotel-container .more-button span:active {
+      color: var(--basic-white);
+      opacity: 0.3;
+    }
+
+
 
 
 .rating{
