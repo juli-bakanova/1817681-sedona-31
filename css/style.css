@@ -569,9 +569,7 @@ svg:active path {
 
 }
 
-.check{
 
-}
 
 .filter-menu {
   background: url("../img/catalog-background.jpg") no-repeat;
@@ -619,7 +617,16 @@ svg:active path {
   justify-content: space-between;
 }
 
+.infrastructure {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .check {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 23px;
   cursor: pointer;
   user-select: none;
 }
@@ -742,6 +749,8 @@ svg:active path {
 }
 
 .filter-list {
+  display: flex;
+  flex-direction: column;
   padding-left: 72px;
 
 }
