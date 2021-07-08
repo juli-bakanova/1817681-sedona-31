@@ -576,7 +576,8 @@ svg:active path {
   display: flex;
   justify-content: space-between;
   padding-top: 26px;
-  padding-bottom: 32px;
+
+  background-size: cover;
 }
 
 .filter-menu ul {
@@ -606,6 +607,13 @@ svg:active path {
     color: var(--basic-white);
 }
 
+.form-price {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
 .form-legend label {
   position: relative;
   display: block;
@@ -615,6 +623,24 @@ svg:active path {
 
 .form-label {
   justify-content: space-between;
+  /*padding-bottom: 25px;*/
+
+
+}
+
+.filter-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 72px;
+  padding-top: 24px;
+
+
+}
+
+.filter-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .infrastructure {
@@ -623,26 +649,35 @@ svg:active path {
   border: none;
 }
 
+.type-house {
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-right: 126px;
+}
+
 .check {
   display: flex;
-  align-items: center; 
+  align-items: center;
   margin-bottom: 23px;
   cursor: pointer;
   user-select: none;
 }
 
-.check::before {
+.form-checker + label::before {
   content: "";
   position: relative;
 
-  padding: 0 15px 23px 13px;
+  padding: 0 15px 25px 13px;
+  margin-top: 25px;
+  margin-right: 15px;
 
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 
-.check:checked::after {
+.form-checker:checked + label::before {
   content: "";
   position: relative;
 
@@ -658,7 +693,6 @@ svg:active path {
 
 .range-controls {
   position: relative;
-  height: 20px;
   margin-bottom: 33px;
   padding-top: 20px;
   padding-right: 10px;
@@ -674,9 +708,9 @@ svg:active path {
 }
 
 .range-controls .bar {
-  width: 80%;
+  width: 75%;
   height: 2px;
-  background: #00ca74;
+  background: white;
 }
 
 .range-controls .toggle {
@@ -724,9 +758,25 @@ svg:active path {
   border: 2px solid white;
 }
 
+.price-controls::after {
+    content: '';
+    position: absolute;
+    top: 41%;
+    right: 23%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
 .show-button {
-  width: 133px;
+  display: flex;
+  justify-content: center;
+  width: 137px;
   height: 32px;
+
+  margin: 32px auto 33px;
+  padding: 5px 35px 8px 36px;
 
   font: inherit;
   font-size: 14px;
@@ -735,10 +785,11 @@ svg:active path {
   text-transform: uppercase;
   color: #ffffff;
 
-  background-color: transparent;
+  background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
+
 
 .show-button:hover,
 .show-button:focus {
@@ -748,18 +799,6 @@ svg:active path {
   cursor: pointer;
 }
 
-.filter-list {
-  display: flex;
-  flex-direction: column;
-  padding-left: 72px;
-
-}
-
-.filter-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 
 
@@ -785,14 +824,7 @@ svg:active path {
   color: var(--basic-white);
 }
 
-.show-button {
-  text-decoration: none;
-  color: var(--basic-white);
-  border: none;
-  margin: 32px auto 33px;
-  padding: 6px 33px;
-  line-height: 20px;
-}
+
 
 .results {
  display: grid;
