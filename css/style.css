@@ -23,7 +23,7 @@
 /* Big Page */
 
 .page-body {
-  min-width: 1240px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -690,6 +690,22 @@ svg:active path {
 }
 
 
+/*.form-checker:disabled + label:before {
+  content: "";
+  position: relative;
+
+  background-image: url("../img/checkbox-off-d.svg");
+  background-repeat: no-repeat;
+}
+
+.form-checker:disabled:checked + label:before {
+  content: "";
+  position: relative;
+
+  background-image: url("../img/checkbox-on-d.svg");
+  background-repeat: no-repeat;
+}*/
+
 
 .range-controls {
   position: relative;
@@ -720,7 +736,7 @@ svg:active path {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
+  border: 8px solid var(--basic-white);
   background-color: #ababab;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -755,17 +771,17 @@ svg:active path {
   padding-bottom: 8px;
   text-align: center;
   color: var(--basic-white);
-  border: 2px solid white;
+  border: 2px solid var(--basic-white);
 }
 
 .price-controls::after {
     content: '';
     position: absolute;
-    top: 41%;
+    top: 19%;
     right: 23%;
     width: 2px;
-    height: 22px;
-    background: #ffffff;
+    height: 24px;
+    background: var(--basic-white);
     transform: translate(-50%, -50%);
 }
 
@@ -783,10 +799,10 @@ svg:active path {
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--basic-white);
 
   background: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
 }
 
@@ -794,7 +810,7 @@ svg:active path {
 .show-button:hover,
 .show-button:focus {
   color: #000000;
-  background-color: #ffffff;
+  background-color: var(--basic-white);
 
   cursor: pointer;
 }
@@ -833,7 +849,7 @@ svg:active path {
  background-color: var(--bacis-white);
  padding-left: 73px;
  padding-top: 30px;
- padding-bottom: 30px;
+ padding-bottom: 15px;
  padding-right: 73px;
  color: var(--basic-black);
 }
@@ -860,6 +876,16 @@ svg:active path {
   padding: 0;
 }
 
+.sort-link {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.current .sort-link  {
+  color: var(--basic-main-blue);
+}
 
 .sort-link ul {
   margin: 0;
@@ -868,39 +894,25 @@ svg:active path {
 
 .sort-link:hover {
     color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px dashed #81B3D2;
+    border-bottom: 1px dashed var(--basic-main-blue);
   }
 
 .sort-link:hover,
 .sort-link:focus {
     color: #81B3D2;
-    border-bottom: 1px dashed #81B3D2;
+    border-bottom: 1px dashed var(--basic-main-blue);
   }
 
 .sort-link:active {
-    color: #000000;
+    color: var( --basic-black);
 
   }
 
 .sort-link:active {
-    color: #81B3D2;
+    color: var(--basic-main-blue);
 
   }
 
-.sort-link {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.sort-link .current {
-  color: var(--basic-main-blue);
-}
-
-.buttons-wrapper {
-
-}
 
 
 .sorting-buttons {
@@ -916,16 +928,16 @@ svg:active path {
 
 .sorting-buttons:hover,
 .sorting-buttons:focus {
-    fill: #000000;
+    fill: var( --basic-black);
   }
 
 .sorting-buttons:active {
-    fill: #81B3D2;
+    fill: var(--basic-main-blue);
 
   }
 
 .sorting-buttons:active {
-      fill: #81B3D2;
+      fill: var(--basic-main-blue);
 
     }
 
@@ -942,50 +954,54 @@ svg:active path {
 }
 
 .housing-list{
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /*padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 73px;
-  padding-right: 73px;
-
-}
-
-.housing-list ul {
-  margin: 0;
+  padding-right: 73px;*/
   padding: 0;
+
+  min-height: 151px;
+
+  border-top: 1px solid #e4e4e4;
 }
+
+
+
 
 .housing-item {
   display: flex;
   align-items: flex-start;
-  width: 100%;
+  /*width: 100%;*/
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 73px;
+  padding-right: 73px;
+
+border-bottom: 1px solid #e4e4e4;
 }
 
 .housing-item p{
 
+
 }
-
-ё
-
 
 .hotel-container{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   flex-grow: 1;
+  align-items: flex-start;
 
 
   padding-left: 37px;
-  padding-top: 10px;
+  padding-top: 9px;
 
 }
-
 
 .hotel-specification {
   display: flex;
-
-  padding-left: 37px;
-  padding-top: 23px;
-
+  padding-top: 7px;
 }
+
 
 .hotel-title {
 
@@ -999,28 +1015,32 @@ svg:active path {
 
 }
 
+.hotel-title:hover,
+.hotel-title:focus {
+  color: #81b3d2;
+}
 
-
-.hotel-type {
-
-  color: var(--basic-black);
-  padding: 0;
-  margin: 0;
-
+.hotel-title:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-type,
 .hotel-price {
-  width: 44%;
+
   margin: 0;
 }
 
 
-
 .buttons-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
+
+  margin-left: 6px;
+}
+
+.more-button {
 }
 
 .hotel-container .more-button {
@@ -1028,6 +1048,9 @@ svg:active path {
     width: 110px;
     height: 27px;
     margin: 0 auto;
+
+    margin-top: 15px;
+
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
@@ -1061,7 +1084,7 @@ svg:active path {
     width: 142px;
     height: 27px;
     margin: 0 auto;
-    margin-left: 6px;
+
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
@@ -1099,16 +1122,20 @@ svg:active path {
   width: 110px;
   height: 27px;
   flex-wrap: wrap;
-  justify-self: end;
+  justify-content: flex-end;
+  /*padding-right: 73px;*/
 }
 
 .rating span {
-  align-items: flex-end;
+  justify-content: flex-end;
 
 }
 
 .rating-text {
-  color: var(--basic-grey);
+  color: #666666;
+  background-color: #f2f2f2;
+  padding: 5px 12px 3px 15px;
+  margin-top: 47px;
 }
 
 .stars {
